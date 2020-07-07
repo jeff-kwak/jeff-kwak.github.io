@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on Jeff Kwak&#39;s Web Log</title>
-    <link>http://jeffkwak.com/series/</link>
+    <link>https://jeff-kwak.github.io/series/</link>
     <description>Recent content in Series on Jeff Kwak&#39;s Web Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	<atom:link href="http://jeffkwak.com/series/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jeff-kwak.github.io/series/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
