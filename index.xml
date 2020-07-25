@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Using Unity&#39;s Input System with Cinemachine</title>
+      <link>https://jeffkwak.com/posts/unity-input-system-cinemachine/</link>
+      <pubDate>Sat, 25 Jul 2020 12:21:13 -0400</pubDate>
+      
+      <guid>https://jeffkwak.com/posts/unity-input-system-cinemachine/</guid>
+      <description>In Unity3D (v2019.4.x), when you try to use the Cinemachine and the new Input System you will receive a slightly confusing error message:
+ InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+ There&amp;rsquo;s a simple explanation for this. The old Input mechanism is still around, and still supported, and existing packages still have to support it.</description>
+    </item>
+    
+    <item>
       <title>Starting Another New Blog</title>
       <link>https://jeffkwak.com/posts/starting-another-new-blog/</link>
       <pubDate>Fri, 03 Jul 2020 21:42:55 -0400</pubDate>
