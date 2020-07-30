@@ -6,10 +6,19 @@
     <description>Recent content in unity3d on Jeff Kwak&#39;s Web Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 25 Jul 2020 12:21:13 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2020 18:29:48 -0400</lastBuildDate>
     
 	<atom:link href="https://jeffkwak.com/tags/unity3d/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Creating a Unity3D Package for Stateless</title>
+      <link>https://jeffkwak.com/posts/unity3d-package-for-stateless/</link>
+      <pubDate>Wed, 29 Jul 2020 18:29:48 -0400</pubDate>
+      
+      <guid>https://jeffkwak.com/posts/unity3d-package-for-stateless/</guid>
+      <description>One pattern that I depend on all the time is the State Machine pattern. It&amp;rsquo;s a great way to decouple inherit state from the game objects in your system. It&amp;rsquo;s a simple pattern that&amp;rsquo;s pretty simple to implement yourself, but there already happens to be a complete and robust library in the C# eco-system: Stateless. Also, unfortunate, you cannot use .NET&amp;rsquo;s package manager in Unity (that&amp;rsquo;d be a little weird but awesome).</description>
+    </item>
     
     <item>
       <title>Using Unity&#39;s Input System with Cinemachine</title>
