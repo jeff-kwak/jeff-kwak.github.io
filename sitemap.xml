@@ -3,27 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jeffkwak.com/posts/brackeys-game-jam-2020-2-day-1/</loc>
+    <lastmod>2020-08-01T10:02:05-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jeffkwak.com/series/brackeys-game-jam-2020-2/</loc>
+    <lastmod>2020-08-01T10:02:05-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jeffkwak.com/tags/game-jam/</loc>
+    <lastmod>2020-08-01T10:02:05-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jeffkwak.com/tags/game-programming/</loc>
+    <lastmod>2020-08-01T10:02:05-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jeffkwak.com/posts/</loc>
+    <lastmod>2020-08-01T10:02:05-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jeffkwak.com/series/</loc>
+    <lastmod>2020-08-01T10:02:05-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jeffkwak.com/tags/</loc>
+    <lastmod>2020-08-01T10:02:05-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jeffkwak.com/posts/unity3d-package-for-stateless/</loc>
     <lastmod>2020-07-29T18:29:48-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jeffkwak.com/tags/game-programming/</loc>
-    <lastmod>2020-07-29T18:29:48-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://jeffkwak.com/tags/package-manager/</loc>
-    <lastmod>2020-07-29T18:29:48-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jeffkwak.com/posts/</loc>
-    <lastmod>2020-07-29T18:29:48-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jeffkwak.com/tags/</loc>
     <lastmod>2020-07-29T18:29:48-04:00</lastmod>
   </url>
   
@@ -79,10 +99,6 @@
   
   <url>
     <loc>https://jeffkwak.com/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://jeffkwak.com/series/</loc>
   </url>
   
 </urlset>

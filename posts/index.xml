@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Jeff Kwak&#39;s Web Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 29 Jul 2020 18:29:48 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 01 Aug 2020 10:02:05 -0400</lastBuildDate>
     
 	<atom:link href="https://jeffkwak.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Brackeys Game Jam 2020.2 Day 1</title>
+      <link>https://jeffkwak.com/posts/brackeys-game-jam-2020-2-day-1/</link>
+      <pubDate>Sat, 01 Aug 2020 10:02:05 -0400</pubDate>
+      
+      <guid>https://jeffkwak.com/posts/brackeys-game-jam-2020-2-day-1/</guid>
+      <description>2020-08-01 0800H EDT Woke up and the jam has been going on for 2 hours already. The theme is &amp;ldquo;REWIND&amp;rdquo;. Time for coffee and to noodle on some ideas for the game.
+2020-08-01 1000H EDT I have a couple of ideas around the theme. In no particular order:
+ A maze game where you can only go backwards by a &amp;ldquo;REWIND&amp;rdquo;. You only get so many rewinds per level. A time traveler game.</description>
+    </item>
     
     <item>
       <title>Creating a Unity3D Package for Stateless</title>

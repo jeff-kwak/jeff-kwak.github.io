@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>game-jam on Jeff Kwak&#39;s Web Log</title>
+    <link>https://jeffkwak.com/tags/game-jam/</link>
+    <description>Recent content in game-jam on Jeff Kwak&#39;s Web Log</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 01 Aug 2020 10:02:05 -0400</lastBuildDate>
+    
+	<atom:link href="https://jeffkwak.com/tags/game-jam/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Brackeys Game Jam 2020.2 Day 1</title>
+      <link>https://jeffkwak.com/posts/brackeys-game-jam-2020-2-day-1/</link>
+      <pubDate>Sat, 01 Aug 2020 10:02:05 -0400</pubDate>
+      
+      <guid>https://jeffkwak.com/posts/brackeys-game-jam-2020-2-day-1/</guid>
+      <description>2020-08-01 0800H EDT Woke up and the jam has been going on for 2 hours already. The theme is &amp;ldquo;REWIND&amp;rdquo;. Time for coffee and to noodle on some ideas for the game.
+2020-08-01 1000H EDT I have a couple of ideas around the theme. In no particular order:
+ A maze game where you can only go backwards by a &amp;ldquo;REWIND&amp;rdquo;. You only get so many rewinds per level. A time traveler game.</description>
+    </item>
+    
+  </channel>
+</rss>
