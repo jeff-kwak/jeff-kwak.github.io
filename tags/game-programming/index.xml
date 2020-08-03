@@ -6,10 +6,21 @@
     <description>Recent content in game-programming on Jeff Kwak&#39;s Web Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 01 Aug 2020 10:02:05 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 02 Aug 2020 10:03:57 -0400</lastBuildDate>
     
 	<atom:link href="https://jeffkwak.com/tags/game-programming/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Brackeys Game Jam 2020.2 Day 2</title>
+      <link>https://jeffkwak.com/posts/brackeys-game-jam-2020-2-day-2/</link>
+      <pubDate>Sun, 02 Aug 2020 10:03:57 -0400</pubDate>
+      
+      <guid>https://jeffkwak.com/posts/brackeys-game-jam-2020-2-day-2/</guid>
+      <description>2020-08-02 1005H EDT I think I&amp;rsquo;m actually going to spend the time to put together a skeleton and some stories. I&amp;rsquo;d like to get a rough idea of the size of this project. I have a suspicion that it&amp;rsquo;s too big.
+2020-08-02 1135H EDT I built out a rough backlog, which made me make a couple of decisions.
+ I decided to use the URP template in Unity because it&amp;rsquo;s the easiest to use and I wanted to add a little juice with Shader and the Effects Graph.</description>
+    </item>
     
     <item>
       <title>Brackeys Game Jam 2020.2 Day 1</title>
