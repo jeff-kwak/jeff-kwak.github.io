@@ -15,27 +15,27 @@
     
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Brackeys Game Jam 2020.2 Day 2"/>
+<meta name="twitter:title" content="Brackeys Game Jam 2020.2 Day 3"/>
 <meta name="twitter:description" content="Devlog for a game jame"/>
 
-    <meta property="og:title" content="Brackeys Game Jam 2020.2 Day 2" />
+    <meta property="og:title" content="Brackeys Game Jam 2020.2 Day 3" />
 <meta property="og:description" content="Devlog for a game jame" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://jeffkwak.com/posts/brackeys-game-jam-2020-2-day-2/" />
-<meta property="article:published_time" content="2020-08-02T10:03:57-04:00" />
-<meta property="article:modified_time" content="2020-08-02T10:03:57-04:00" />
+<meta property="og:url" content="https://jeffkwak.com/posts/brackeys-game-jam-2020-2-day-3/" />
+<meta property="article:published_time" content="2020-08-03T07:59:07-04:00" />
+<meta property="article:modified_time" content="2020-08-03T07:59:07-04:00" />
 
 
 
     
-      <base href="https://jeffkwak.com/posts/brackeys-game-jam-2020-2-day-2/">
+      <base href="https://jeffkwak.com/posts/brackeys-game-jam-2020-2-day-3/">
     
     <title>
-Brackeys Game Jam 2020.2 Day 2 · Jeff Kwak&#39;s Web Log
+Brackeys Game Jam 2020.2 Day 3 · Jeff Kwak&#39;s Web Log
 </title>
 
     
-      <link rel="canonical" href="https://jeffkwak.com/posts/brackeys-game-jam-2020-2-day-2/">
+      <link rel="canonical" href="https://jeffkwak.com/posts/brackeys-game-jam-2020-2-day-3/">
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
@@ -109,19 +109,19 @@ Brackeys Game Jam 2020.2 Day 2 · Jeff Kwak&#39;s Web Log
   <article>
     <header>
       <div class="post-title">
-        <h1 class="title">Brackeys Game Jam 2020.2 Day 2</h1>
+        <h1 class="title">Brackeys Game Jam 2020.2 Day 3</h1>
       </div>
       <div class="post-meta">
         <div class="date">
           <span class="posted-on">
             <i class="fas fa-calendar"></i>
-            <time datetime='2020-08-02T10:03:57-04:00'>
-              August 2, 2020
+            <time datetime='2020-08-03T07:59:07-04:00'>
+              August 3, 2020
             </time>
           </span>
           <span class="reading-time">
             <i class="fas fa-clock"></i>
-            4-minute read
+            3-minute read
           </span>
         </div>
         
@@ -136,25 +136,21 @@ Brackeys Game Jam 2020.2 Day 2 · Jeff Kwak&#39;s Web Log
 
     <div>
       
-      <h2 id="2020-08-02-1005h-edt">2020-08-02 1005H EDT</h2>
-<p>I think I&rsquo;m actually going to spend the time to put together a skeleton and some stories. I&rsquo;d like to get a rough idea of the size of this project. I have a suspicion that it&rsquo;s too big.</p>
-<h2 id="2020-08-02-1135h-edt">2020-08-02 1135H EDT</h2>
-<p>I built out a rough backlog, which made me make a couple of decisions.</p>
-<ul>
-<li>I decided to use the URP template in Unity because it&rsquo;s the easiest to use and I wanted to add a little juice with Shader and the Effects Graph.</li>
-<li>I&rsquo;m keeping the backlog in the <code>docs</code> folder. A simple to-do list is a fine Kanban board for a single developer in a game jam.</li>
-<li>I decided what my minimum submission would have in it. It&rsquo;s pretty scaled down, but I have myself completing that on Wednesday (day 5). We&rsquo;ll see. Overall, I think it&rsquo;s possible to complete the project which was the purpose of the backlog exercise.</li>
-<li>I&rsquo;m going to keep a log of my decisions in the devlog as opposed to a slightly more formal ADR type process. I think that&rsquo;s fine for a solo game jam.</li>
-<li>I&rsquo;m going to have to compromise on the details to get to the submission line. I plan to go with the easy route, and if there&rsquo;s time there are a lot of tricks I can use to add some polish to the game. What might suffer unfortunately, in addition to polish, are the variety of problems and the variance in the result phases (i.e., the different ways of dying). Up until the submission deadline, I&rsquo;ll be trying to add different problems and results.</li>
-<li>I&rsquo;m going to use the dungeon and character assets I purchased from the Synty Store, because that alone sets this apart. It only adds a small amount of effort to make this 3D vs. a 2D top down (given that I already have the assets of course).</li>
-</ul>
-<h2 id="2020-08-02-1308h-edt">2020-08-02 1308H EDT</h2>
-<p>It just occurred to me that my original flat dungeon idea will result in dead-ends, and if I keep the no re-entry rule, that means the generation algorithm will produce impossible to solve dungeons. The solution would be to change the algorithm to a more classic Zelda like dungeon algorithm, but with no re-entry a similar problem occurs; you can essentially paint yourself into a corner and make an impossible to solve dungeon. I must have biased my paper prototype somehow to have missed this.</p>
-<p>I could just cheese the algorithm and let you double-back into the same space, but with a new autogenerated room. For example, exiting North, West, South, and then East would put you in the same physical space as the starting room.</p>
-<p>For the jam, I think the easiest thing is to keep the generate on the fly approach, but to be a little nicer. Every exit will be a stairway down. Essentially, every room is its own level in the dungeon. This has an added benefit that I can make the stairway a sort of loading screen if I need it to generate the next room. So you could end up in a physical space below your starting position, but you could never collide into a previous room. Also, because of the no re-entry rule, the exits not taken don&rsquo;t generate anything. This is still a little cheesy, but a little nicer. You also get to see your character going down corridors, stairs.</p>
-<h2 id="2020-08-02-2315h-edt">2020-08-02 2315H EDT</h2>
-<p>It was a busy day, and I wasn&rsquo;t able to complete the plan. We&rsquo;ll see how much further I can make it tomorrow even though I work. The upside is that a lot of the remaining tasks are code. I&rsquo;m a little nervous about finishing.</p>
-<p>Today completed the basic UI structure and created the 9 directional rooms and the final reward room. I decided to create prefabs and join them together, versus completely procedurally generated rooms. It would have taken me a lot longer to build the rooms that way. The way I&rsquo;m considering building a room now is almost like a pattern language approach. It should work out well. Variance is definitely something that&rsquo;s going to suffer in the final product of the jam.</p>
+      <h2 id="2020-08-03-0759h-edt">2020-08-03 0759H EDT</h2>
+<p>Today working on a lot of the generation algorithms. Primary dungeon and path generation will be complete today. Need to get as far as the REWIND mechanic.</p>
+<h2 id="2020-08-03-0847h-edt">2020-08-03 0847H EDT</h2>
+<p>Have initial room spawning complete. Need to get some work done at the office (remotely of course).</p>
+<h2 id="2020-08-03-2016h-edt">2020-08-03 2016H EDT</h2>
+<p>Actually not spawning Nilrem in the <code>GameController</code>. Nilrem and the first room always spawn at the same location. So Nilrem is just a <code>GameObject</code> in the main dungeon scene.</p>
+<p>Behold Nilrem!</p>
+<p><img src="https://jeffkwak.com/images/brackeys-game-jam-2020-2-day-3/behold-nilrem.png" alt="Behold Nilrem"></p>
+<p>He&rsquo;s the purple guy in the scene. He&rsquo;ll soon look a little better. This is the quick prototype for getting spawning and basic movement down.</p>
+<p>I&rsquo;m actually pretty happy with today&rsquo;s progress so far. However, it is today that I realize I won&rsquo;t be able to submit this project on Saturday for the jam. That&rsquo;s too bad; I do think this will be a fun game. I would actually, like to continue this project knocking out a couple of items a day on the backlog until I release this first version as a prototype. This is going to be a pretty unique game in my opinion, and if it works out I&rsquo;d even like to Kickstarter it to raise money to add custom stylized assets, music, and some mo-cap animations. Animations that help tell a story and add humor in this game would really make it something more than a prototype.</p>
+<p>That being said, I still want to submit something for the game jam. Time for a Pivot.</p>
+<p>The name of the new game is: <em>&ldquo;Rewind Maestro&rdquo;</em>. This is inspired by the game <a href="https://www.youtube.com/watch?v=d27JTsAGks4&amp;feature=emb_logo">Ridiculous Fishing</a>. But instead of a fish line and fishing and shooting fish, you&rsquo;ll start as a conductor at the end of a staff of music. You&rsquo;ll <em>REWIND</em> through a staff of music. As soon as you touch the first &ldquo;note&rdquo; you&rsquo;ll fast-forward through the score, you have to collect the right notes. At the end of the score, the notes right, wrong, or missing will be played and you&rsquo;ll receive a score based on how perfect the song is.</p>
+<p>The Game begins and the Maestro is standing to the right of a staff of music. He holds up his baton. The REWIND control is shown activating at the top left of the screen. You guide a treble clef backwards through the staff. There are notes, instruments, and some other clefs. Clicking above the treble causes the clef to move up (or up arrow). Clicking below the treble causes the clef to move down (or the down arrow). Your goal is to get to the start of the score. As soon as you touch a note or some other obstacle, the direction changes to fast-forward. Now you have to collect the correct notes. You&rsquo;ll know they&rsquo;re correct because they&rsquo;ll stand out visually somehow. When you reach the end of the staff, The notes that you&rsquo;ve captured will Play above the Maestro&rsquo;s head, and you&rsquo;ll receive points for each correct note and bonuses for streaks etc&hellip;</p>
+<p>It should be noted that this is going to be programmer art in 2D. If I keep it simple enough that shouldn&rsquo;t be a problem. I need to only make a few sprites and the &ldquo;animation&rdquo; is pretty simple.</p>
+<p>Maybe I&rsquo;ll sleep on it and see if I can come up with anything better.</p>
 
     </div>
 
@@ -173,11 +169,11 @@ Brackeys Game Jam 2020.2 Day 2 · Jeff Kwak&#39;s Web Log
         
         
           
-            <li>
-              <a href="https://jeffkwak.com/posts/brackeys-game-jam-2020-2-day-3/">Brackeys Game Jam 2020.2 Day 3</a>
-            </li>
-          
         
+          
+            <li>
+              <a href="https://jeffkwak.com/posts/brackeys-game-jam-2020-2-day-2/">Brackeys Game Jam 2020.2 Day 2</a>
+            </li>
           
         
           
