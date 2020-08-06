@@ -1,34 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Brackeys Game Jam 2020.2 on Jeff Kwak&#39;s Web Log</title>
-    <link>https://jeffkwak.com/series/brackeys-game-jam-2020.2/</link>
-    <description>Recent content in Brackeys Game Jam 2020.2 on Jeff Kwak&#39;s Web Log</description>
+    <title>DevLog: Nilrem and the Hourglass of Time on Jeff Kwak&#39;s Web Log</title>
+    <link>https://jeffkwak.com/series/devlog-nilrem-and-the-hourglass-of-time/</link>
+    <description>Recent content in DevLog: Nilrem and the Hourglass of Time on Jeff Kwak&#39;s Web Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 05 Aug 2020 12:08:05 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 03 Aug 2020 07:59:07 -0400</lastBuildDate>
     
-	<atom:link href="https://jeffkwak.com/series/brackeys-game-jam-2020.2/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jeffkwak.com/series/devlog-nilrem-and-the-hourglass-of-time/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Brackeys Game Jam 2020.2 Day 5</title>
-      <link>https://jeffkwak.com/posts/brackeys-game-jam-2020-2-day-5/</link>
-      <pubDate>Wed, 05 Aug 2020 12:08:05 -0400</pubDate>
-      
-      <guid>https://jeffkwak.com/posts/brackeys-game-jam-2020-2-day-5/</guid>
-      <description>2020-08-05 1209H EDT Today is the day the game will be finished. Putting a little &amp;ldquo;backlog&amp;rdquo; into the repo (a to-do list). Decided to rename the game to &amp;ldquo;Relax and Rewind&amp;rdquo;. Want to give it a sort of Zen Garden aesthetic. Decided against scoring and timers. Just put the puzzle back together, and if you can&amp;rsquo;t just rewind.
-2020-08-05 1713H EDT Figured out a nuance with the Input System. The orbit camera is best served by listening to something called Delta [Pointer] bindings.</description>
-    </item>
-    
-    <item>
-      <title>Brackeys Game Jam 2020.2 Day 4</title>
-      <link>https://jeffkwak.com/posts/brackeys-game-jam-2020-2-day-4/</link>
-      <pubDate>Tue, 04 Aug 2020 12:09:17 -0400</pubDate>
-      
-      <guid>https://jeffkwak.com/posts/brackeys-game-jam-2020-2-day-4/</guid>
-      <description>2020-08-04 1210H EDT Day 4 and really the first day of &amp;ldquo;The Pivot&amp;rdquo;. Previously, I had thought of a pretty interesting game &amp;ldquo;Rewind Maestro&amp;rdquo;. This is a do-able game in the time frame, but honestly, I&amp;rsquo;m just not excited enough by the idea to work on it. I can&amp;rsquo;t yet come up with the style in my mind that would make it fun and compelling. The overall idea is pretty neat though.</description>
-    </item>
     
     <item>
       <title>Brackeys Game Jam 2020.2 Day 3</title>

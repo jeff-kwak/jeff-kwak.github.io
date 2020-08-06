@@ -6,7 +6,7 @@
     <description>Recent content in Series on Jeff Kwak&#39;s Web Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 03 Aug 2020 07:59:07 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2020 12:08:05 -0400</lastBuildDate>
     
 	<atom:link href="https://jeffkwak.com/series/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>Brackeys Game Jam 2020.2</title>
       <link>https://jeffkwak.com/series/brackeys-game-jam-2020.2/</link>
-      <pubDate>Mon, 03 Aug 2020 07:59:07 -0400</pubDate>
+      <pubDate>Wed, 05 Aug 2020 12:08:05 -0400</pubDate>
       
       <guid>https://jeffkwak.com/series/brackeys-game-jam-2020.2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DevLog: Nilrem and the Hourglass of Time</title>
+      <link>https://jeffkwak.com/series/devlog-nilrem-and-the-hourglass-of-time/</link>
+      <pubDate>Mon, 03 Aug 2020 07:59:07 -0400</pubDate>
+      
+      <guid>https://jeffkwak.com/series/devlog-nilrem-and-the-hourglass-of-time/</guid>
       <description></description>
     </item>
     

@@ -15,28 +15,27 @@
     
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Brackeys Game Jam 2020.2 Day 3"/>
+<meta name="twitter:title" content="Brackeys Game Jam 2020.2 Day 4"/>
 <meta name="twitter:description" content="Devlog for a game jam"/>
 
-    <meta property="og:title" content="Brackeys Game Jam 2020.2 Day 3" />
+    <meta property="og:title" content="Brackeys Game Jam 2020.2 Day 4" />
 <meta property="og:description" content="Devlog for a game jam" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://jeffkwak.com/posts/brackeys-game-jam-2020-2-day-3/" />
-<meta property="article:published_time" content="2020-08-03T07:59:07-04:00" />
-<meta property="article:modified_time" content="2020-08-03T07:59:07-04:00" />
-
+<meta property="og:url" content="https://jeffkwak.com/posts/brackeys-game-jam-2020-2-day-4/" />
+<meta property="article:published_time" content="2020-08-04T12:09:17-04:00" />
+<meta property="article:modified_time" content="2020-08-04T12:09:17-04:00" />
 
 
 
     
-      <base href="https://jeffkwak.com/posts/brackeys-game-jam-2020-2-day-3/">
+      <base href="https://jeffkwak.com/posts/brackeys-game-jam-2020-2-day-4/">
     
     <title>
-Brackeys Game Jam 2020.2 Day 3 · Jeff Kwak&#39;s Web Log
+Brackeys Game Jam 2020.2 Day 4 · Jeff Kwak&#39;s Web Log
 </title>
 
     
-      <link rel="canonical" href="https://jeffkwak.com/posts/brackeys-game-jam-2020-2-day-3/">
+      <link rel="canonical" href="https://jeffkwak.com/posts/brackeys-game-jam-2020-2-day-4/">
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
@@ -110,19 +109,19 @@ Brackeys Game Jam 2020.2 Day 3 · Jeff Kwak&#39;s Web Log
   <article>
     <header>
       <div class="post-title">
-        <h1 class="title">Brackeys Game Jam 2020.2 Day 3</h1>
+        <h1 class="title">Brackeys Game Jam 2020.2 Day 4</h1>
       </div>
       <div class="post-meta">
         <div class="date">
           <span class="posted-on">
             <i class="fas fa-calendar"></i>
-            <time datetime='2020-08-03T07:59:07-04:00'>
-              August 3, 2020
+            <time datetime='2020-08-04T12:09:17-04:00'>
+              August 4, 2020
             </time>
           </span>
           <span class="reading-time">
             <i class="fas fa-clock"></i>
-            3-minute read
+            2-minute read
           </span>
         </div>
         
@@ -137,21 +136,12 @@ Brackeys Game Jam 2020.2 Day 3 · Jeff Kwak&#39;s Web Log
 
     <div>
       
-      <h2 id="2020-08-03-0759h-edt">2020-08-03 0759H EDT</h2>
-<p>Today working on a lot of the generation algorithms. Primary dungeon and path generation will be complete today. Need to get as far as the REWIND mechanic.</p>
-<h2 id="2020-08-03-0847h-edt">2020-08-03 0847H EDT</h2>
-<p>Have initial room spawning complete. Need to get some work done at the office (remotely of course).</p>
-<h2 id="2020-08-03-2016h-edt">2020-08-03 2016H EDT</h2>
-<p>Actually not spawning Nilrem in the <code>GameController</code>. Nilrem and the first room always spawn at the same location. So Nilrem is just a <code>GameObject</code> in the main dungeon scene.</p>
-<p>Behold Nilrem!</p>
-<p><img src="https://jeffkwak.com/images/brackeys-game-jam-2020-2-day-3/behold-nilrem.png" alt="Behold Nilrem"></p>
-<p>He&rsquo;s the purple guy in the scene. He&rsquo;ll soon look a little better. This is the quick prototype for getting spawning and basic movement down.</p>
-<p>I&rsquo;m actually pretty happy with today&rsquo;s progress so far. However, it is today that I realize I won&rsquo;t be able to submit this project on Saturday for the jam. That&rsquo;s too bad; I do think this will be a fun game. I would actually, like to continue this project knocking out a couple of items a day on the backlog until I release this first version as a prototype. This is going to be a pretty unique game in my opinion, and if it works out I&rsquo;d even like to Kickstarter it to raise money to add custom stylized assets, music, and some mo-cap animations. Animations that help tell a story and add humor in this game would really make it something more than a prototype.</p>
-<p>That being said, I still want to submit something for the game jam. Time for a Pivot.</p>
-<p>The name of the new game is: <em>&ldquo;Rewind Maestro&rdquo;</em>. This is inspired by the game <a href="https://www.youtube.com/watch?v=d27JTsAGks4&amp;feature=emb_logo">Ridiculous Fishing</a>. But instead of a fish line and fishing and shooting fish, you&rsquo;ll start as a conductor at the end of a staff of music. You&rsquo;ll <em>REWIND</em> through a staff of music. As soon as you touch the first &ldquo;note&rdquo; you&rsquo;ll fast-forward through the score, you have to collect the right notes. At the end of the score, the notes right, wrong, or missing will be played and you&rsquo;ll receive a score based on how perfect the song is.</p>
-<p>The Game begins and the Maestro is standing to the right of a staff of music. He holds up his baton. The REWIND control is shown activating at the top left of the screen. You guide a treble clef backwards through the staff. There are notes, instruments, and some other clefs. Clicking above the treble causes the clef to move up (or up arrow). Clicking below the treble causes the clef to move down (or the down arrow). Your goal is to get to the start of the score. As soon as you touch a note or some other obstacle, the direction changes to fast-forward. Now you have to collect the correct notes. You&rsquo;ll know they&rsquo;re correct because they&rsquo;ll stand out visually somehow. When you reach the end of the staff, The notes that you&rsquo;ve captured will Play above the Maestro&rsquo;s head, and you&rsquo;ll receive points for each correct note and bonuses for streaks etc&hellip;</p>
-<p>It should be noted that this is going to be programmer art in 2D. If I keep it simple enough that shouldn&rsquo;t be a problem. I need to only make a few sprites and the &ldquo;animation&rdquo; is pretty simple.</p>
-<p>Maybe I&rsquo;ll sleep on it and see if I can come up with anything better.</p>
+      <h2 id="2020-08-04-1210h-edt">2020-08-04 1210H EDT</h2>
+<p>Day 4 and really the first day of &ldquo;The Pivot&rdquo;. Previously, I had thought of a pretty interesting game &ldquo;Rewind Maestro&rdquo;. This is a do-able game in the time frame, but honestly, I&rsquo;m just not excited enough by the idea to work on it. I  can&rsquo;t yet come up with the style in my mind that would make it fun and compelling. The overall idea is pretty neat though. I&rsquo;ll keep it in the idea log. I need a new idea for the jam.</p>
+<p>The only thing that comes to mind is a riff on Brackeys own REWIND video: <a href="https://www.youtube.com/watch?v=eqlHpPzS22U&amp;list=LLSy96YSvT3AFn904zr0dKuQ">REWIND TIME in Unity</a>. I&rsquo;m sure there will be 1000s of riffs on this concept. So this is just for fun.</p>
+<p>The game is going to be called &ldquo;GRAMTAN&rdquo;. A 3D stack of colorful objects will be neatly arranged in the center of the puzzle. You can take as much time as you like to look at the puzzle, but when you hit go, the puzzle is scrambled. You have a certain amount of time to restore the puzzle to its original shape. Of course, if you forget, you can REWIND the puzzle and start again, but the clock never stops.</p>
+<p>I plan to use Probuilder to create the shapes. I&rsquo;ll use the URP template because I want to do some things with Shader Graph especially around highlights and what some effects. I&rsquo;ll use Cinemachine to make an easy tracking camera, and the new Input System to potentially support controllers, and it&rsquo;s something to get used to. I will create one scene per puzzle and they&rsquo;ll all be handcrafted.</p>
+<p>It&rsquo;s been a rough day. I&rsquo;m still not happy with the idea, but finishing my first jam is really what I&rsquo;m after here.</p>
 
     </div>
 
@@ -176,37 +166,11 @@ Brackeys Game Jam 2020.2 Day 3 · Jeff Kwak&#39;s Web Log
           
         
           
-            <li>
-              <a href="https://jeffkwak.com/posts/brackeys-game-jam-2020-2-day-4/">Brackeys Game Jam 2020.2 Day 4</a>
-            </li>
-          
-        
-          
         
           
             <li>
-              <a href="https://jeffkwak.com/posts/brackeys-game-jam-2020-2-day-2/">Brackeys Game Jam 2020.2 Day 2</a>
+              <a href="https://jeffkwak.com/posts/brackeys-game-jam-2020-2-day-3/">Brackeys Game Jam 2020.2 Day 3</a>
             </li>
-          
-        
-          
-            <li>
-              <a href="https://jeffkwak.com/posts/brackeys-game-jam-2020-2-day-1/">Brackeys Game Jam 2020.2 Day 1</a>
-            </li>
-          
-        
-        </ul>
-      </nav>
-    
-  
-    
-    
-    
-      <h3>See also in DevLog: Nilrem and the Hourglass of Time</h3>
-      <nav>
-        <ul>
-        
-        
           
         
           
