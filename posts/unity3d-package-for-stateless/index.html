@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="author" content="Jeff Kwak">
+    <meta name="description" content="Creating a package from an existing 3rd party github repo for Unity&#39;s new package manager.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    
+      <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Creating a Unity3D Package for Stateless"/>
+<meta name="twitter:description" content="Creating a package from an existing 3rd party github repo for Unity&#39;s new package manager."/>
+
+    <meta property="og:title" content="Creating a Unity3D Package for Stateless" />
+<meta property="og:description" content="Creating a package from an existing 3rd party github repo for Unity&#39;s new package manager." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jeffkwak.com/posts/unity3d-package-for-stateless/" />
+<meta property="article:published_time" content="2020-07-29T18:29:48-04:00" />
+<meta property="article:modified_time" content="2020-07-29T18:29:48-04:00" />
+
+
+    
+      <base href="https://jeffkwak.com/posts/unity3d-package-for-stateless/">
+    
+    <title>
+Creating a Unity3D Package for Stateless · Jeff Kwak&#39;s Web Log
+</title>
+
+    
+      <link rel="canonical" href="https://jeffkwak.com/posts/unity3d-package-for-stateless/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://jeffkwak.com/css/coder.min.3219ef62ae52679b7a9c19043171c3cd9f523628c2a65f3ef247ee18836bc90b.css" integrity="sha256-MhnvYq5SZ5t6nBkEMXHDzZ9SNijCpl8&#43;8kfuGINryQs=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="https://jeffkwak.com/css/coder-dark.min.e78e80fc3a585a4d1c8fc7f58623b6ff852411e38431a9cd1792877ecaa160f6.css" integrity="sha256-546A/DpYWk0cj8f1hiO2/4UkEeOEManNF5KHfsqhYPY=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://jeffkwak.com/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://jeffkwak.com/images/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.67.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://jeffkwak.com/">
+      Jeff Kwak&#39;s Web Log
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://jeffkwak.com/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://jeffkwak.com/about/">About</a>
+          </li>
+        
+      
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+<section class="container post">
+  <article>
+    <header>
+      <div class="post-title">
+        <h1 class="title">Creating a Unity3D Package for Stateless</h1>
+      </div>
+      <div class="post-meta">
+        <div class="date">
+          <span class="posted-on">
+            <i class="fas fa-calendar"></i>
+            <time datetime='2020-07-29T18:29:48-04:00'>
+              July 29, 2020
+            </time>
+          </span>
+          <span class="reading-time">
+            <i class="fas fa-clock"></i>
+            2-minute read
+          </span>
+        </div>
+        
+        <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://jeffkwak.com/tags/unity3d/">unity3d</a>
+      <span class="separator">•</span>
+    <a href="https://jeffkwak.com/tags/game-programming/">game-programming</a>
+      <span class="separator">•</span>
+    <a href="https://jeffkwak.com/tags/package-manager/">package-manager</a></div>
+
+      </div>
+    </header>
+
+    <div>
+      
+      <p>One pattern that I depend on all the time is the <em>State Machine</em> pattern. It&rsquo;s a great way to decouple inherit state from the game objects in your system. It&rsquo;s a simple pattern that&rsquo;s pretty simple to implement yourself, but there already happens to be a complete and robust library in the C# eco-system: <a href="https://github.com/dotnet-state-machine/stateless">Stateless</a>. Also, unfortunate, you cannot use .NET&rsquo;s package manager in Unity (that&rsquo;d be a little weird but awesome).</p>
+<p>I created a package for use with Unity&rsquo;s recent package manager that lets users easily consume the <a href="https://github.com/dotnet-state-machine/stateless">Stateless</a> library.</p>
+<h2 id="how-to-use-the-package">How to Use the Package</h2>
+<p>Luckily, <a href="https://github.com/dotnet-state-machine/stateless">Stateless</a> is dependency free, and if you include all the source files as assets in your project it becomes immediately available.</p>
+<p>Rather than copying the files into individual projects over and over again, I made a Unity package for the new package manager. Here&rsquo;s the link <a href="https://github.com/jeff-kwak/StatelessUnityPackage">https://github.com/jeff-kwak/StatelessUnityPackage</a>. To use the package you enter the git URL <a href="git@github.com:jeff-kwak/StatelessUnityPackage.git">git@github.com:jeff-kwak/StatelessUnityPackage.git</a>, the same URL you would use to clone the repository into the &ldquo;Add package from git URL&hellip;&rdquo; dialog.</p>
+<p>Here are the steps:</p>
+<ol>
+<li>Open the package manager window. <img src="https://jeffkwak.com/images/unity3d-package-for-stateless/open-package-manager.png" alt="Open the Package Manager Window"></li>
+<li>Click the <code>Add</code> button and choose &ldquo;Add package from git URL&hellip;&rdquo; <img src="https://jeffkwak.com/images/unity3d-package-for-stateless/add-package-from-git-url.png" alt="Add a package from a Git URL"></li>
+<li>Enter the git URL and push the <code>Add</code> button. <img src="https://jeffkwak.com/images/unity3d-package-for-stateless/enter-url-and-push-add.png" alt="Enter the Git URL and push add"></li>
+</ol>
+<h2 id="how-to-make-a-package-for-the-package-manager">How to Make a Package for the Package Manager</h2>
+<p>I actually built the package by hand, this time. If the number of releases is frequent enough, I&rsquo;ll tie into GitHub actions and create the package CI/CD style. We&rsquo;ll see if that&rsquo;s necessary.</p>
+<p>The layout of the package on disc is described here: <a href="https://docs.unity3d.com/Manual/cus-layout.html">Unity - Manual: Package layout</a>.</p>
+<p>You have to add a &ldquo;package.json&rdquo; that describes the package. This is described here: <a href="https://docs.unity3d.com/Manual/upm-manifestPkg.html">Unity - Manual: Package manifest</a>. Here is the <em>package.json</em> from this project:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+  <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;com.github.dotnet-state-machine.stateless&#34;</span>,
+  <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;5.1.2&#34;</span>,
+  <span style="color:#f92672">&#34;displayName&#34;</span>: <span style="color:#e6db74">&#34;Stateless&#34;</span>,
+  <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;A simple library for creating state machines in C# code&#34;</span>,
+  <span style="color:#f92672">&#34;unity&#34;</span>: <span style="color:#e6db74">&#34;2019.4&#34;</span>,
+  <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;library&#34;</span>,
+  <span style="color:#f92672">&#34;author&#34;</span>: {
+    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Nicholas Blumhardt&#34;</span>,
+    <span style="color:#f92672">&#34;url&#34;</span>: <span style="color:#e6db74">&#34;https://github.com/dotnet-state-machine/stateless&#34;</span>
+  }
+}
+</code></pre></div><p>In a folder named <code>Runtime</code> (for this example), you can add the script assets. You also need an <code>.asmdef</code> file (e.g., <code>Unity.Stateless.asmdef</code>) which simply contains the package name:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+	<span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Stateless&#34;</span>
+}
+</code></pre></div><p>You&rsquo;ll need to import the project, into a blank project for example, to get unity to process all the scripts and create <code>.meta</code> files. Be sure to include those and the <code>.csproj</code> file.</p>
+
+    </div>
+
+
+    <footer>
+      
+
+
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "jeffkwak-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+      
+    </footer>
+  </article>
+
+  
+</section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+      
+        ©
+        
+        2020
+         Jeff Kwak 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+        
+      
+    </section>
+  </footer>
+
+    </main>
+
+    
+
+    
+
+    <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
+</script>
+
+
+  </body>
+
+</html>

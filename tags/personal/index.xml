@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>personal on Jeff Kwak&#39;s Web Log</title>
+    <link>https://jeffkwak.com/tags/personal/</link>
+    <description>Recent content in personal on Jeff Kwak&#39;s Web Log</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 03 Jul 2020 21:42:55 -0400</lastBuildDate>
+    
+	<atom:link href="https://jeffkwak.com/tags/personal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Starting Another New Blog</title>
+      <link>https://jeffkwak.com/posts/starting-another-new-blog/</link>
+      <pubDate>Fri, 03 Jul 2020 21:42:55 -0400</pubDate>
+      
+      <guid>https://jeffkwak.com/posts/starting-another-new-blog/</guid>
+      <description>I am a Dark Matter Developer This is probably my fourth attempt at blogging. I&amp;rsquo;ve always realized that writing is important, but eventually I get busy with life or a project at work and let missing a few days turn into missing a few years. I swear I&amp;rsquo;m still out there building software, I&amp;rsquo;m just hard to see.
+This is probably for an audience of one I&amp;rsquo;d like to keep this blog up and running for a change.</description>
+    </item>
+    
+  </channel>
+</rss>
