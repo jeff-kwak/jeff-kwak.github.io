@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Jeff Kwak&#39;s Web Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 05 Aug 2020 12:08:05 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 21 Aug 2020 21:06:04 -0400</lastBuildDate>
     
 	<atom:link href="https://jeffkwak.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Creating and Using Unity Packages on GitHub</title>
+      <link>https://jeffkwak.com/posts/creating-using-unity-packages-on-github/</link>
+      <pubDate>Fri, 21 Aug 2020 21:06:04 -0400</pubDate>
+      
+      <guid>https://jeffkwak.com/posts/creating-using-unity-packages-on-github/</guid>
+      <description>Unity does a good job of blending in with the .NET ecosystem, but it stands alone as something a little different. I had initially packaged Stateless, but in a couple of projects I started to have issues compiling. The StateMachine pattern at it&amp;rsquo;s most basic level is pretty simple so I just made a version specific to Unity (the first release is definitely an MVP implementation): gr8tgames/statemachine.
+Targetting the new Unity Package Manager format, I came across this excellent tutorial from InfallibleCode: A Better Way To Share Your Code!</description>
+    </item>
     
     <item>
       <title>Brackeys Game Jam 2020.2 Day 5</title>
