@@ -1,6 +1,6 @@
 +++ 
 draft = false
-date = 2020-08-21T21:06:04-04:00
+date = 2020-08-21T10:06:04-04:00
 title = "Creating and Using Unity Packages on GitHub"
 description = "Create a Unity Package as an embedded package. Publish the project to GitHub. Publish the deployable package using the Git subtree command.Add to new projects using the name of the subtree branch as a suffix to the GitHub clone URL"
 slug = "creating-using-unity-packages-on-github" 
